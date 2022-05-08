@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import styles from './ShowCars.module.scss';
 
 const CarCard = (props) => {
-  const {name, email, carNo, time, carImg} = props;
+  const { name, email, carImg, carNo, time } = props.car;
 
   return (
     <div className={styles.car_card}>
@@ -19,11 +19,11 @@ const CarCard = (props) => {
 }
 
 CarCard.propTypes = {
-  carImg: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
+  carImg: PropTypes.string,
+  name: PropTypes.string,
   email: PropTypes.string,
-  carNo: PropTypes.string.isRequired,
-  time: PropTypes.string.isRequired
+  carNo: PropTypes.string,
+  time: PropTypes.string
 };
 
 export default CarCard;

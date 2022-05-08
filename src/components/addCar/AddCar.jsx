@@ -2,6 +2,8 @@ import styles from "./AddCar.module.scss";
 import { useState } from "react";
 
 const AddCar = (props) => {
+  const { onAdd } = props;
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [carNo, setCarNo] = useState("");
@@ -12,6 +14,8 @@ const AddCar = (props) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+
+    onAdd({ name, email, carNo, carImg, date, time, agreement });
     
     setName("");
     setEmail("");
