@@ -1,0 +1,24 @@
+.car_display{  
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+  .car_card{
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    gap: 20px;
+    img{
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .car_card_info{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h3,h5{
+        margin: 0;
+      }
+    }
+  }
+}
