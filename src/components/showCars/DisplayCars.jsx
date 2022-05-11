@@ -3,7 +3,8 @@ import CarCard from './CarCard';
 
 import { useState } from 'react'; 
 
-const DisplayCars = () => {
+const 
+DisplayCars = () => {
   const [cars, setCars] = useState([
     {
       id: 1,

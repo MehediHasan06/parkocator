@@ -7,6 +7,7 @@ const addCarFunc = (carInfo) => {
 };
 
 const Parkocator = () => {
+  
   return(
     <div className={styles.container}>
       <AddCar onAdd={addCarFunc}/>
